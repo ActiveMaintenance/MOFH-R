@@ -2,11 +2,10 @@
 MOFH-R is a hosting account and support management system designed to work with MOFH (MyOwnFreeHost) and GoGetSSL. MOFH-R currently has a limited number of features which are listed below:
 
 [![AppVeyor](https://img.shields.io/badge/Licence-GPL_2.0-orange)](LICENSE)
-[![AppVeyor](https://img.shields.io/badge/Version-v0.2-informational)](https://github.com/mahtab2003/MOFH-R/releases/latest)
-![AppVeyor](https://img.shields.io/badge/Build-Passed-brightgreen)
-![AppVeyor](https://img.shields.io/badge/Interface-AdminLTE-lightgreen)
-![AppVeyor](https://img.shields.io/badge/Development-In_Progress-lightgreen)
-![AppVeyor](https://img.shields.io/badge/Dependencies-PHP,_MySQL,_cUrl-red)
+[![AppVeyor](https://img.shields.io/badge/Version-Final-informational)](https://github.com/ActiveMaintenance/MOFH-R/releases/latest)
+[![AppVeyor](https://img.shields.io/badge/Interface-AdminLTE-lightgreen)](https://adminlte.io/)
+![AppVeyor](https://img.shields.io/badge/Development-Discontinued-lightgrey)
+![AppVeyor](https://img.shields.io/badge/Dependencies-PHP,_MySQL,_curl-red)
 
 ### Features
 - User Management
@@ -27,13 +26,13 @@ MOFH-R is a hosting account and support management system designed to work with 
 
 ### Requirements
 Your server needs to meet the following minimum requirements to run MOFH-R:
-- PHP v5.6 or above (PHP 8 not supported yet).
+- PHP v5.6 or above.
 - MySQL v5.7 or above.
 - A valid, trusted SSL certificate.
 
 ### Installation 
 The installation of MOFH-R is much easier than you think!
-- Download the MOFH-R installation files [here](https://github.com/mahtab2003/MOFH-R/releases/latest). Alternatively, if you want the latest development version you can get it [here](https://github.com/mahtab2003/MOFH-R/archive/refs/heads/master.zip).
+- Download the MOFH-R installation files [here](https://github.com/ActiveMaintenance/MOFH-R/releases/latest). Alternatively, if you want the latest development version you can get it [here](https://github.com/ActiveMaintenance/MOFH-R/archive/refs/heads/main.zip).
 - Extract the file and upload the contents to your web hosting account. 
 - Edit `app/config/config.php` file and set your base url like `https://{your-domain}/{directory}/`.
 - Create a new database for MOFH-R.
@@ -54,11 +53,11 @@ Here are some widely used SMTP services. They have free plans with some limitati
 - [SendGrid](https://sendgrid.com/free/).
 
 ### Help
-If you require assistance, please proceed to [our forum](https://nxvim.freeflarum.com/), where you can find the answers to many questions and also ask your own.  
-You can also [open an issue here](https://github.com/mahtab2003/MOFH-R/issues/new) if you have discovered a bug or have an issue, although the forum is still the preferred way, especially for feature requests. In any way, please ensure your topic has not been previously discussed, and if it has contribute to that discussion instead of making a new one when you can.
+If you require assistance, please use different software. MOFH-R is considered abandoned; this project exists only to provide a functional PHP 8.2 version.
+You can still [open an issue](https://github.com/ActiveMaintenance/MOFH-R/issues/new) or a [Pull Request](https://github.com/ActiveMaintenance/MOFH-R/pulls) if you have discovered a bug that should be easy to fix (such as a deprecation warning). If you want to continue development of this project, feel free to fork it.
 
-### Like MOFH-R?
-If you like project MOFH-R please donate [here](https://xera.eu.org/DONATE.md).
+### Liked MOFH-R?
+If you liked project MOFH-R and want to support its original author and his continued works (at the moment, Xera) you can donate [here](https://xera.eu.org/DONATE.md).
 
 ### Copyright
-This build is created and maintained by [Mehtab Hassan](https://github.com/mahtab2003). Code released under [the GPL-2.0 license](LICENSE).
+This build is created by [Mehtab Hassan](https://github.com/mahtab2003) and maintained by [ActiveMaintenance](https://github.com/ActiveMaintenance). Code released under [the GPL-2.0 license](LICENSE).
