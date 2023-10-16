@@ -4,7 +4,6 @@ class Base extends CI_Model
 {
 	function __construct()
 	{
-		parent::__construct();
 		$this->load->helper('cookie');
 		$this->load->helper('hash');
 	}

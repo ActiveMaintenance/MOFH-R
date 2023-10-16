@@ -157,7 +157,7 @@ class I extends CI_Controller
 			{
 				$this->load->database();
 				$this->load->model('user');
-				$this->load->library(['form_validation' => 'fv']);
+				$this->load->library(['signup_form_validation' => 'fv']);
 				$this->fv->set_rules('name', 'Your Name', ['trim', 'required', 'valid_name']);
 				$this->fv->set_rules('email', 'Email Address', ['trim', 'required', 'valid_email']);
 				$this->fv->set_rules('password', 'Password', ['trim', 'required']);

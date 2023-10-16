@@ -4,7 +4,6 @@ class Mailer extends CI_Model
 {
 	function __construct()
 	{
-		parent::__construct();
 		$this->load->model('site');
 		$this->load->model('smtp');
 		$this->load->model('user');
@@ -35,7 +34,7 @@ class Mailer extends CI_Model
 	{
 		if($this->is_active())
 		{
-			$template = $this->emails->get(['subject', 'content'], $id);
+			$template = $this->emails->get($id, ['subject', 'content']);
 			if(is_array($template))
 			{
 				$subject = $template['subject'].' - '.$this->site->get(['title']);

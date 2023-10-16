@@ -45,10 +45,10 @@ class S extends CI_Controller
 				$data['list'] = $this->ssl->get();
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/all_ssl');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/all_ssl', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 			else
 			{
@@ -70,10 +70,10 @@ class S extends CI_Controller
 			$data['list'] = $this->ssl->get([], ['for' => $this->user->logged_data(['key'])]);
 				
 			$this->load->view($this->ui->template_dir().'/includes/header', $data);
-			$this->load->view($this->ui->template_dir().'/includes/navbar');
-			$this->load->view($this->ui->template_dir().'/includes/sidebar');
-			$this->load->view($this->ui->template_dir().'/ssl');
-			$this->load->view($this->ui->template_dir().'/includes/footer');
+			$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+			$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+			$this->load->view($this->ui->template_dir().'/ssl', $data);
+			$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 		}
 		else
 		{
@@ -139,10 +139,10 @@ class S extends CI_Controller
 				$data['title'] = 'create_ssl_title';
 					
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/create_ssl');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/create_ssl', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else
@@ -183,10 +183,10 @@ class S extends CI_Controller
 					}
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/view_ssl');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/view_ssl', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 				else
 				{

@@ -156,10 +156,10 @@ class N extends CI_Controller
 				$data['title'] = 'settings_title';
 
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/settings');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/settings', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else
@@ -190,10 +190,10 @@ class N extends CI_Controller
 				}
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/clients');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/clients', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 			else
 			{
@@ -214,10 +214,10 @@ class N extends CI_Controller
 			$data['title'] = 'dashboard_title';
 				
 			$this->load->view($this->ui->template_dir().'/includes/header', $data);
-			$this->load->view($this->ui->template_dir().'/includes/navbar');
-			$this->load->view($this->ui->template_dir().'/includes/sidebar');
-			$this->load->view($this->ui->template_dir().'/dashboard');
-			$this->load->view($this->ui->template_dir().'/includes/footer');
+			$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+			$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+			$this->load->view($this->ui->template_dir().'/dashboard', $data);
+			$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 		}
 		else
 		{
@@ -235,10 +235,10 @@ class N extends CI_Controller
 				$data['title'] = 'xdashboard_title';
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/xdashboard');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/xdashboard', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 			else
 			{
@@ -408,10 +408,10 @@ class N extends CI_Controller
 					$data['data'] = $res[0];
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/view_client');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/view_client', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 			}
 			else
@@ -639,10 +639,10 @@ class N extends CI_Controller
 					$data['title'] = 'site_settings_title';
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/site_settings');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/site_settings', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 			}
 			else
@@ -763,10 +763,10 @@ class N extends CI_Controller
 					$data['title'] = 'mofh_settings_title';
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/mofh_settings');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/mofh_settings', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 			}
 			else
@@ -791,10 +791,10 @@ class N extends CI_Controller
 				$data['list'] = $this->base->get('emails');
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/emails');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/emails', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 			else
 			{
@@ -820,10 +820,10 @@ class N extends CI_Controller
 					$this->fv->set_rules('content', $this->ui->text('content_text'), ['required']);
 					if($this->fv->run() === true)
 					{
-						$res = $this->emails->set([
+						$res = $this->emails->set($id, [
 							'subject' => $this->input->post('subject'),
 							'content' => $this->input->post('content', false)
-						], $id);
+						]);
 						if($res !== false)
 						{
 							$this->session->set_flashdata('msg', json_encode([1, $this->ui->text('email_updated_text')]));
@@ -851,12 +851,12 @@ class N extends CI_Controller
 				else
 				{
 					$data['title'] = 'edit_email_title';
-					$data['info'] = $this->emails->get(['id', 'subject', 'content', 'docs'], $id);
+					$data['info'] = $this->emails->get($id, ['id', 'subject', 'content', 'docs']);
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/edit_email');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/edit_email', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 			}
 			else

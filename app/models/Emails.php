@@ -4,11 +4,10 @@ class Emails extends CI_Model
 {
 	function __construct()
 	{
-		parent::__construct();
 		$this->load->model('base');
 	}
 
-	function get($data = ['subject'], $id)
+	function get($id, $data = ['subject'])
 	{
 		$res = $this->base->get('emails', ['id' => $id], [], []);
 		$return = [];
@@ -26,7 +25,7 @@ class Emails extends CI_Model
 		return false;
 	}
 
-	function set($data = [], $id)
+	function set($id, $data = [])
 	{
 		$res = $this->base->set('emails', $data, ['id' => $id]);
 		if($res !== false)

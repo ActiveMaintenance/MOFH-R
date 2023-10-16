@@ -4,7 +4,6 @@ class Hosting extends CI_Model
 {
 	function __construct()
 	{
-		parent::__construct();
 		$this->load->model('base');
 		$this->load->model('mofh');
 		$this->load->model('user');

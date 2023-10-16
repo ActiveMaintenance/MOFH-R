@@ -49,10 +49,10 @@ class T extends CI_Controller
 				$data['list'] = $this->ticket->get('ticket', [], $where, $or_where);
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/all_ticket');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/all_ticket', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 			else
 			{
@@ -74,10 +74,10 @@ class T extends CI_Controller
 			$data['list'] = $this->ticket->get('ticket', [], ['for' => $this->user->logged_data(['key'])]);
 				
 			$this->load->view($this->ui->template_dir().'/includes/header', $data);
-			$this->load->view($this->ui->template_dir().'/includes/navbar');
-			$this->load->view($this->ui->template_dir().'/includes/sidebar');
-			$this->load->view($this->ui->template_dir().'/ticket');
-			$this->load->view($this->ui->template_dir().'/includes/footer');
+			$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+			$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+			$this->load->view($this->ui->template_dir().'/ticket', $data);
+			$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 		}
 		else
 		{
@@ -148,10 +148,10 @@ class T extends CI_Controller
 				$data['title'] = 'create_ticket_title';
 					
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/create_ticket');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/create_ticket', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else
@@ -330,10 +330,10 @@ class T extends CI_Controller
 					$data['list'] = $this->ticket->get('reply', [], $where);
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/view_ticket');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/view_ticket', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 				else
 				{

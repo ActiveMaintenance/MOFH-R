@@ -46,10 +46,10 @@ class H extends CI_Controller
 				$data['list'] = $this->hosting->get();
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/includes/navbar');
-				$this->load->view($this->ui->template_dir().'/includes/sidebar');
-				$this->load->view($this->ui->template_dir().'/all_accounts');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+				$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+				$this->load->view($this->ui->template_dir().'/all_accounts', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 			else
 			{
@@ -71,10 +71,10 @@ class H extends CI_Controller
 			$data['list'] = $this->hosting->get([], ['for' => $this->user->logged_data(['key'])]);
 				
 			$this->load->view($this->ui->template_dir().'/includes/header', $data);
-			$this->load->view($this->ui->template_dir().'/includes/navbar');
-			$this->load->view($this->ui->template_dir().'/includes/sidebar');
-			$this->load->view($this->ui->template_dir().'/accounts');
-			$this->load->view($this->ui->template_dir().'/includes/footer');
+			$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+			$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+			$this->load->view($this->ui->template_dir().'/accounts', $data);
+			$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 		}
 		else
 		{
@@ -156,10 +156,10 @@ class H extends CI_Controller
 					$data['title'] = 'create_account_title';
 						
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/create_account');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/create_account', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 			}
 			else
@@ -229,8 +229,8 @@ class H extends CI_Controller
 				$data['info'] = $info[0];
 
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/cpanel_login');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/cpanel_login', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 			elseif($this->input->get('builder') AND $this->input->get('builder'))
 			{
@@ -283,10 +283,10 @@ class H extends CI_Controller
 					$data['info'] = $info[0];
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/view_account');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/view_account', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 				else
 				{
@@ -424,10 +424,10 @@ class H extends CI_Controller
 					$data['info'] = $info[0];
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/includes/navbar');
-					$this->load->view($this->ui->template_dir().'/includes/sidebar');
-					$this->load->view($this->ui->template_dir().'/account_settings');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/includes/navbar', $data);
+					$this->load->view($this->ui->template_dir().'/includes/sidebar', $data);
+					$this->load->view($this->ui->template_dir().'/account_settings', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 				else
 				{

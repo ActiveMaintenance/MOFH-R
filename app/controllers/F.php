@@ -86,8 +86,8 @@ class F extends CI_Controller
 				$data['title'] = 'register_title';
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/register');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/register', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else
@@ -153,8 +153,8 @@ class F extends CI_Controller
 				$data['title'] = 'login_title';
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/login');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/login', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else
@@ -224,8 +224,8 @@ class F extends CI_Controller
 				$data['title'] = 'forget_title';
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/forget');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/forget', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else
@@ -293,8 +293,8 @@ class F extends CI_Controller
 				$data['token'] = $token;
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/reset');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/reset', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else
@@ -377,8 +377,8 @@ class F extends CI_Controller
 				$data['title'] = '2fa_title';
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/2fa');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/2fa', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 		else

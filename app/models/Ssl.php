@@ -1,10 +1,10 @@
 <?php 
 
+#[AllowDynamicProperties]
 class Ssl extends CI_Model
 {
 	function __construct()
 	{
-		parent::__construct();
 		$this->load->model('base');
 		$this->load->model('site');
 		$this->load->model('selfsigned');

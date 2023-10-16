@@ -25,8 +25,8 @@ class P extends CI_Controller
 		$data['title'] = 'error_404_title';
 
 		$this->load->view($this->ui->template_dir().'/includes/header', $data);
-		$this->load->view($this->ui->template_dir().'/error_404');
-		$this->load->view($this->ui->template_dir().'/includes/footer');
+		$this->load->view($this->ui->template_dir().'/error_404', $data);
+		$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 	}
 
 	function error_503()
@@ -34,8 +34,8 @@ class P extends CI_Controller
 		$data['title'] = 'error_503_title';
 
 		$this->load->view($this->ui->template_dir().'/includes/header', $data);
-		$this->load->view($this->ui->template_dir().'/error_503');
-		$this->load->view($this->ui->template_dir().'/includes/footer');
+		$this->load->view($this->ui->template_dir().'/error_503', $data);
+		$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 	}
 
 	function error_501()
@@ -43,8 +43,8 @@ class P extends CI_Controller
 		$data['title'] = 'error_501_title';
 
 		$this->load->view($this->ui->template_dir().'/includes/header', $data);
-		$this->load->view($this->ui->template_dir().'/error_501');
-		$this->load->view($this->ui->template_dir().'/includes/footer');
+		$this->load->view($this->ui->template_dir().'/error_501', $data);
+		$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 	}
 
 	function about()
@@ -52,8 +52,8 @@ class P extends CI_Controller
 		$data['title'] = 'about_title';
 
 		$this->load->view($this->ui->template_dir().'/includes/header', $data);
-		$this->load->view($this->ui->template_dir().'/about');
-		$this->load->view($this->ui->template_dir().'/includes/footer');
+		$this->load->view($this->ui->template_dir().'/about', $data);
+		$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 	}
 
 	function update()
@@ -102,8 +102,8 @@ class P extends CI_Controller
 					$data['list'] = $list;
 
 					$this->load->view($this->ui->template_dir().'/includes/header', $data);
-					$this->load->view($this->ui->template_dir().'/update');
-					$this->load->view($this->ui->template_dir().'/includes/footer');
+					$this->load->view($this->ui->template_dir().'/update', $data);
+					$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				}
 			}
 			else
@@ -161,8 +161,8 @@ class P extends CI_Controller
 				$data['list'] = get_backups();
 				
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/restore');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/restore', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 			}
 		}
 	}
@@ -189,8 +189,8 @@ class P extends CI_Controller
 				$data['title'] = 'error_401_title';
 
 				$this->load->view($this->ui->template_dir().'/includes/header', $data);
-				$this->load->view($this->ui->template_dir().'/error_401');
-				$this->load->view($this->ui->template_dir().'/includes/footer');
+				$this->load->view($this->ui->template_dir().'/error_401', $data);
+				$this->load->view($this->ui->template_dir().'/includes/footer', $data);
 				http_response_code(401);
 			}
 		}

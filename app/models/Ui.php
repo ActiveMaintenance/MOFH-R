@@ -4,7 +4,6 @@ class Ui extends CI_Model
 {
 	function __construct()
 	{
-		parent::__construct();
 		$this->load->model('site');
 		$this->load->helper('cookie');
 		$this->load->helper('ui');
